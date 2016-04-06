@@ -9,6 +9,14 @@ export default Ember.Component.extend({
     },
     removeFromCart(item) {
       this.get('shoppingCart').remove(item);
-    }, 
+    },
+    emptyCart() {
+      this.get('shoppingCart').empty([]);
+    },
+    delete(item) {
+      if(confirm("Are you sure you want to delete this?")) {
+        this.sendAction('destroyItem', item);
+      }
+    }
   }
 });
