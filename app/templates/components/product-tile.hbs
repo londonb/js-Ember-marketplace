@@ -1,13 +1,15 @@
-<li>{{#link-to 'item' item.id}}{{item.name}}<br>
+<li><div class="oneItem">
+  {{#link-to 'item' item.id}}{{item.name}}<br>
   ${{item.cost}}<br>
-<img class="storePageImg" src={{item.image}}>{{/link-to}}<br>
-{{item.description}}
-{{#if item.inCart}}
+  <img class="storePageImg" src={{item.image}}>{{/link-to}}<br>
+  {{item.description}}
+  {{#if item.inCart}}
   This is already in your cart!
 
-{{else}}<br>
-<button {{action 'addToCart' item}}>Add to Cart</button>
-{{/if}}
-<button {{action 'removeFromCart' item}}>Remove from Cart</button>
-<button {{action 'emptyCart'}}>Empty Cart</button>
+  {{else}}<br>
+  <button class="btn btn-sm btn-info"{{action 'addToCart' item}}>Add to Cart</button>
+  {{/if}}
+  <button class="btn btn-sm btn-warning"{{action 'removeFromCart' item}}>Remove from Cart</button>
+  {{update-item item=item updateItem='updateItem'}}
+</div>
 </li>

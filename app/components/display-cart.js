@@ -10,5 +10,10 @@ export default Ember.Component.extend({
       total += this.get('shoppingCart.items')[i].get('cost');
     }
     return total;
-  })
+  }),
+  actions: {
+    emptyCart() {
+      this.get('shoppingCart').empty([]);
+    },
+  }
 });

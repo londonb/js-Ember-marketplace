@@ -1,3 +1,13 @@
 .storePageImg {
 max-width: 300px;
 }
+
+.oneItem {
+  border: 1px solid black;
+  padding: 30px;
+  margin: 10px;
+}
+
+.updateForm {
+  margin-top: 5px;
+}

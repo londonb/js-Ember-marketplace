@@ -13,6 +13,9 @@ export default Ember.Component.extend({
     emptyCart() {
       this.get('shoppingCart').empty([]);
     },
+    updateItem(item, params){
+      this.sendAction('updateItem', item, params);
+    },
     delete(item) {
       if(confirm("Are you sure you want to delete this?")) {
         this.sendAction('destroyItem', item);

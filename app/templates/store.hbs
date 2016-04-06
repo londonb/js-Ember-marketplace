@@ -1,7 +1,6 @@
 {{new-item saveItem='saveItem'}}
 <ul>
 {{#each model as |item|}}
-  {{product-tile item=item  destroyItem='destroyItem'}}
-  {{update-item item=item updateItem='updateItem'}}
+  {{product-tile item=item updateItem='updateItem' destroyItem='destroyItem'}}
 {{/each}}
 </ul>
