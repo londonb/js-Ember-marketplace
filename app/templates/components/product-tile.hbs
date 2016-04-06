@@ -2,5 +2,10 @@
 <img src={{item.image}}>
 {{item.description}}
 ${{item.cost}}
-hi there
-<button {{action 'addToCart' item}}>Add to Cart</button></li>
+{{#if item.inCart}}
+  This is already in your cart!
+{{else}}
+<button {{action 'addToCart' item}}>Add to Cart</button>
+{{/if}}
+<button {{action 'removeFromCart' item}}>Remove from Cart</button>
+</li>

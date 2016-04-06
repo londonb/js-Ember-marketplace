@@ -1,5 +1,4 @@
 TO DO
-* As a user, I would like to add multiple items to my shopping cart.
 
 * As a user, I would like to see the total cost of all items in my cart.
 
@@ -23,5 +22,8 @@ TO DO
 
 DONE
 
+* As a user, I would like to add multiple items to my shopping cart.
 
 PENDING
+
+QUESTIONS
