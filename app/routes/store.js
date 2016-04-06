@@ -9,6 +9,11 @@ export default Ember.Route.extend({
     destroyItem(item) {
       item.destroyRecord();
       this.transitionTo('store');
+    },
+    saveItem(params) {
+      var newItem = this.store.createRecord('item', params);
+    newItem.save();
+    this.transitionTo('store');
     }
   }
 });
