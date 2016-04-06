@@ -1,0 +1,28 @@
+{
+  "items": [{
+    "name":"TV",
+    "image": "http://www.gif.tv/tv.png",
+    "cost": 300,
+    "description": "This TV gets all five channels!"
+    }, {
+      "name":"VHS rewinder",
+      "image": "http://www.vintagetoysillustrated.com/vintagetoy/forsale/september/2009/1957_CHEVY_ORANGE_VHS_VIDEO_CASSETTE_TAPE_REWINDER_CORD.JPG",
+      "cost": 25,
+      "description": "This beautiful old looking car will rewind your VHS cassettes for you! Don't waste time using your VCR to rewind your tapes. Rewind one while you watch another!"
+      }, {
+        "name":"Sony Walkman",
+        "image": "http://img.timeinc.net/time/daily/2009/0906/360_walkman_0630.jpg",
+        "cost": 200,
+        "description": "Play your own music on the go without bothering anyone else! This top of the line cassette player is the first of its kind!"
+        }, {
+          "name":"Betamax Player",
+          "image": "http://www.betamaxcollectors.com/images/sonybetamaxsl-5000_1.jpg",
+          "cost": 300,
+          "description": "This is the better format, no matter what everyone else says!"
+          }, {
+            "name":"Atari 2600",
+            "image": "http://vignette4.wikia.nocookie.net/avgn/images/d/dc/50-ToyHallofFame-atari-2600-game-system.jpg/revision/latest?cb=20130818021209",
+            "cost": 199.99,
+            "description": "You can play with your friends!"
+          }]
+        }
