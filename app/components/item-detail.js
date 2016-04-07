@@ -15,6 +15,9 @@ export default Ember.Component.extend({
       if(confirm("Are you sure you want to delete this?")) {
         this.sendAction('destroyItem', item);
       }
+    },
+    submitComment(params) {
+      this.sendAction('submitComment', params);
     }
   }
 });

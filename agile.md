@@ -1,6 +1,5 @@
 TO DO
 
-* As a user, I would like to leave feedback on an item.
 
 * As a user, I would like to leave a rating on an item.
 
@@ -24,6 +23,7 @@ DONE
 
 * As a user, I would like to select an item and see a description, cost, and other details. (Dynamic pages)
 
+* As a user, I would like to leave feedback on an item.
 PENDING
 
 QUESTIONS

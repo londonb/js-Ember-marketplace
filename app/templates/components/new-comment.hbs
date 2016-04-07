@@ -1,0 +1,20 @@
+
+{{#if commentForm}}
+<h1>Leave a Comment?</h1>
+<div>
+  <form>
+    <div class="form-group">
+      <label for="user">Username</label>
+      {{input value=user id="user"}}
+    </div>
+
+    <div class="form-group">
+      <label for="comment">Comment</label>
+      {{#bs-textarea value=comment id="comment"}}{{/bs-textarea}}
+    </div>
+    <button class="btn btn-sm btn-success" {{action 'save'}}>Submit Comment</button>
+  </form>
+</div>
+{{else}}
+<button class="btn btn-sm btn-success" {{action 'showCommentForm'}}>Have a Comment?</button>
+{{/if}}
