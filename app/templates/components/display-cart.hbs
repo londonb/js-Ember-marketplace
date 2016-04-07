@@ -1,6 +1,8 @@
-<h3>Shopping Cart</h3>
-{{#each shoppingCart.items as |item|}}
-  {{item.name}} -- ${{item.cost}}<br>
-{{/each}}
-Total: ${{cartTotal}}
-<button {{action 'emptyCart'}}>Empty Cart</button>
+<div class="shoppingCart">
+  <h4>Shopping Cart</h4>
+  {{#each shoppingCart.items as |item|}}
+  <li>{{item.name}} -- ${{item.cost}}</li>
+  {{/each}}
+  Total: ${{cartTotal}}
+  <button class="btn btn-xs btn-success"{{action 'emptyCart'}}>Empty Cart</button>
+</div>
