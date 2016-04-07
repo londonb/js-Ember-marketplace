@@ -13,11 +13,7 @@ Added to your cart!
 
 {{new-comment item=item comment=comment submitComment="submitComment"}}
 {{#each item.comments as |comment|}}
-User: {{comment.user}}<br>
-Posted on: {{comment.date}}<br>
-Comment:<br>
-{{comment.comment}}
-<hr>
+{{comment-detail comment=comment}}
 {{/each}}
 
 {{#link-to 'store' }}<button class='btn btn-sm btn-success'>Store</button>{{/link-to}}
