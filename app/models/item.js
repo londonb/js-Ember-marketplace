@@ -7,7 +7,7 @@ export default DS.Model.extend({
   cost: DS.attr('number'),
   description: DS.attr(),
   comments: DS.hasMany('comment', {async: true}),
-  average: DS.attr('number'),
+  newAverage: DS.attr('number'),
 
   shoppingCart: Ember.inject.service(),
   inCart: Ember.computed('shoppingCart.items.[]', function() {

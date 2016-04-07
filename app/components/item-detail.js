@@ -32,6 +32,9 @@ export default Ember.Component.extend({
     },
     submitComment(params) {
       this.sendAction('submitComment', params);
-    }
+    },
+    // saveAverage(averageRating, item) { THIS DOES SEND averageRating TO item.js
+    //   this.sendAction('saveAverage', averageRating, item);
+    // }
   }
 });

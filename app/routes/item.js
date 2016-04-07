@@ -31,6 +31,12 @@ export default Ember.Route.extend({
         return item.save();
       });
       this.transitionTo('item', params.item.id);
-    }
+    },
+    // saveAverage(averageRating, item) { THIS SHOULD SEND averageRating to DB, but it doesn't...
+    //   debugger;
+    //   var newAverage = this.store.createRecord('item.averageRating', item, averageRating);
+    //   newAverage.save();
+    //   this.transitionTo('store');
+    // },
     }
   });

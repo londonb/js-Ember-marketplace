@@ -27,6 +27,8 @@ DONE
 
 * As a user, I would like to sort ratings/comments from highest-to-lowest, or vis versa.
 
+* As a user, I would like to see an average rating for an item.
+
 PENDING
 
 * FINISH SELECT MENU (PROBLEM WITH VALUE?)
