@@ -10,6 +10,7 @@ export default Ember.Route.extend({
     return model.get('comments');
   },
 
+
   actions: {
     updateItem(item, params) {
       Object.keys(params).forEach(function(key) {

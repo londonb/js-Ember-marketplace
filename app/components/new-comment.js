@@ -13,7 +13,7 @@ export default Ember.Component.extend({
         date: this.get('date') ? this.get('date') : moment().format('MMMM Do YYYY, h:mm a'),
         comment: this.get('comment'),
         item: this.get('item'),
-        rating: this.get('rating')
+        rating: parseInt(this.get('rating'))
       };
       this.set('commentForm', false);
       this.sendAction('submitComment', params);

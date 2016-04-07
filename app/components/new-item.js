@@ -12,7 +12,8 @@ export default Ember.Component.extend({
         name: this.get('name'),
         image: this.get('image'),
         cost: this.get('cost'),
-        description: this.get('description')
+        description: this.get('description'),
+        // average: this.get('average')
       };
       this.set('addNewItem', false);
       this.sendAction('saveItem', params);

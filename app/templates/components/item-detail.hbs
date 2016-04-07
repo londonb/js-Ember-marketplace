@@ -1,6 +1,7 @@
 <h1>{{item.name}}: </h1>
 <h3>${{item.cost}}</h3>
-<img src={{item.image}}>
+<img src={{item.image}}><br>
+{{averageRating}}
 <h4>{{item.description}}</h4>
 {{#if item.inCart}}
 Added to your cart!
@@ -12,8 +13,8 @@ Added to your cart!
 <button {{action 'delete' item}}>Delete Item</button>
 
 {{new-comment item=item comment=comment submitComment="submitComment"}}
-{{#each item.comments as |comment|}}
-{{comment-detail comment=comment}}
+{{#each sortedComments as |comment|}}
+{{comment-detail item=item sortedComments=sortedComments comment=comment}}
 {{/each}}
 
 {{#link-to 'store' }}<button class='btn btn-sm btn-success'>Store</button>{{/link-to}}

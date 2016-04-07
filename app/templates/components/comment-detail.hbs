@@ -1,7 +1,9 @@
 User: {{comment.user}}<br>
 Posted on: {{comment.date}}<br>
 {{moment-from-now comment.date 'MMMM Do YYYY, h:mm a'}}<br>
-{{star-rating comment}}
+{{star-rating comment}}<br>
+{{comment.rating}}
 Comment:<br>
 {{comment.comment}}
 <hr>
+{{log sortedComments.length}}
