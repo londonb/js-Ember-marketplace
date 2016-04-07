@@ -1,6 +1,7 @@
 User: {{comment.user}}<br>
 Posted on: {{comment.date}}<br>
-{{moment-from-now comment.date 'MMMM Do YYYY, h:mm' allow-empty=true}}<br>
+{{moment-from-now comment.date 'MMMM Do YYYY, h:mm a'}}<br>
+{{star-rating comment}}
 Comment:<br>
 {{comment.comment}}
 <hr>

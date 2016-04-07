@@ -10,9 +10,10 @@ export default Ember.Component.extend({
     save() {
       var params = {
         user: this.get('user'),
-        date: this.get('date') ? this.get('date') : moment().format('MMMM Do YYYY, h:mm'),
+        date: this.get('date') ? this.get('date') : moment().format('MMMM Do YYYY, h:mm a'),
         comment: this.get('comment'),
-        item: this.get('item')
+        item: this.get('item'),
+        rating: this.get('rating')
       };
       this.set('commentForm', false);
       this.sendAction('submitComment', params);

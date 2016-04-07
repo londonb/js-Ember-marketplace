@@ -6,6 +6,10 @@ export default Ember.Route.extend({
   },
   shoppingCart: Ember.inject.service(),
 
+  afterModel: function(model) {
+    return model.get('comments');
+  },
+
   actions: {
     updateItem(item, params) {
       Object.keys(params).forEach(function(key) {

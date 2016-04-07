@@ -1,8 +1,6 @@
 TO DO
 
 
-* As a user, I would like to leave a rating on an item.
-
 * As a user, I would like to leave a rating for a seller/store (if applicable).
 
 * As a user, I would like to sort ratings/comments from highest-to-lowest, or vis versa.
@@ -25,6 +23,8 @@ DONE
 * As a user, I would like to leave feedback on an item.
 
 * As an admin or seller, I would like to see the date a customer left a piece of feedback or rating. (Use Moment.js)
+
+* As a user, I would like to leave a rating on an item.
 
 PENDING
 
